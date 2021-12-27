@@ -1,3 +1,7 @@
+# Stardew Valley Bundle Tracker
+
+A webpage for Stardew Valley players to track their progress on Comunity Center bundles.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
