@@ -2,7 +2,7 @@ import React from 'react';
 import { CheckboxProps } from './Checkbox.types';
 import { StyledLabel, StyledCheckbox } from './Checkbox.styles';
 
-const Checkbox: React.FC<CheckboxProps> = ({
+const Checkbox: React.FC<CheckboxProps & { onChange: () => void }> = ({
   label,
   checked,
   onChange,

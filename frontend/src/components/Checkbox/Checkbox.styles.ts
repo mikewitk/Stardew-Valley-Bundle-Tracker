@@ -13,4 +13,5 @@ export const StyledCheckbox = styled.input`
 export const StyledLabel = styled.label<LabelProps>`
   color: ${({ disabled }) => (disabled ? 'gray' : 'black')};
   text-decoration: ${({ checked }) => (checked ? 'line-through' : 'none')};
+  text-transform: capitalize;
 `;

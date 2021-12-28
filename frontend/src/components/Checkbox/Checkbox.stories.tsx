@@ -15,12 +15,12 @@ const Template: ComponentStory<typeof Checkbox> = (args) => (
 
 export const Checked = Template.bind({});
 Checked.args = {
-  label: 'Wild Horseradish',
+  label: 'wild horseradish',
   checked: true,
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
-  label: 'Wild Horseradish',
+  label: 'wild horseradish',
 };
