@@ -50,7 +50,8 @@
         "namedComponents": "arrow-function",
         "unnamedComponents": "function-expression"
       }
-    ]
+    ],
+    "function-paren-newline":"off"
   },
   "settings": {
     "import/resolver": {
