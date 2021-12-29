@@ -70,17 +70,13 @@ const Template: ComponentStory<typeof BundleCard> = (args) => (
 export const BundleIncomplete = Template.bind({});
 BundleIncomplete.args = {
   title: 'spring foraging bundle',
-  amountCompleted: 2,
   amountNeeded: 4,
-  isComplete: false,
   bundleItems: BUNDLE_ITEMS_INCOMPLETE,
 };
 
 export const BundleComplete = Template.bind({});
 BundleComplete.args = {
   title: 'summer foraging bundle',
-  amountCompleted: 4,
   amountNeeded: 4,
-  isComplete: true,
   bundleItems: BUNDLE_ITEMS_COMPLETE,
 };

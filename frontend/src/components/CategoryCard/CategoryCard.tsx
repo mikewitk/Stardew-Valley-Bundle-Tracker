@@ -20,9 +20,7 @@ const CategoryCard: React.FC<
       <BundleCard
         title={item.title}
         amountNeeded={item.amount_needed}
-        amountCompleted={0}
         bundleItems={item.bundle_items}
-        isComplete={false}
         key={item.title + item.amount_available}
         onChange={onChange}
         categoryId={categoryId}

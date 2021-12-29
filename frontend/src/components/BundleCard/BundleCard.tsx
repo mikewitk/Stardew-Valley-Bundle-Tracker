@@ -12,36 +12,40 @@ const BundleCard: React.FC<
   }
 > = ({
   title,
-  isComplete,
   amountNeeded,
-  amountCompleted,
   bundleItems,
   onChange,
   categoryId,
   bundleId,
-}) => (
-  <div>
-    <StyledTitle isComplete={isComplete}>
-      {title}
-      &nbsp;
-      {amountCompleted}
-      /
-      {amountNeeded}
-    </StyledTitle>
-    <ul>
-      {bundleItems.map((item) => (
-        <StyledLi key={item.item_id}>
-          <Checkbox
-            label={item.label}
-            checked={item.checked}
-            disabled={item.disabled}
-            onChange={() => onChange(categoryId, bundleId, item.item_id)}
-            item_id={item.item_id}
-          />
-        </StyledLi>
-      ))}
-    </ul>
-  </div>
-);
+}) => {
+  const checkedItems = bundleItems.filter(
+    (bundleItem) => bundleItem.checked,
+  ).length;
+
+  return (
+    <div>
+      <StyledTitle isComplete={checkedItems >= amountNeeded}>
+        {title}
+        &nbsp;
+        {checkedItems}
+        /
+        {amountNeeded}
+      </StyledTitle>
+      <ul>
+        {bundleItems.map((item) => (
+          <StyledLi key={item.item_id}>
+            <Checkbox
+              label={item.label}
+              checked={item.checked}
+              disabled={item.disabled}
+              onChange={() => onChange(categoryId, bundleId, item.item_id)}
+              item_id={item.item_id}
+            />
+          </StyledLi>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default BundleCard;

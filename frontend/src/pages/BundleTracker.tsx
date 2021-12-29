@@ -45,6 +45,9 @@ const BundleTracker: React.FC = () => {
       .then((response) => response.json())
       .then((data: DataProps) => {
         // Work with JSON data here
+        if (storage.length > 0) {
+          return;
+        }
         setStorage(data.data);
       })
       .catch((err) => {
