@@ -1,17 +1,18 @@
 import React from 'react';
-import { CheckboxProps } from './Checkbox.types';
 import { StyledLabel, StyledCheckbox } from './Checkbox.styles';
+import { BundleItem } from '../../pages/BundleTracker';
 
-const Checkbox: React.FC<CheckboxProps & { onChange: () => void }> = ({
+const Checkbox: React.FC<BundleItem & { onChange: () => void }> = ({
   label,
   checked,
   onChange,
   disabled,
+  item_id: itemId,
 }) => (
   <>
     <StyledCheckbox
       type="checkbox"
-      name={`checkbox-${label}`}
+      name={`checkbox-${label}-${itemId}`}
       checked={checked}
       onChange={onChange}
       disabled={disabled}

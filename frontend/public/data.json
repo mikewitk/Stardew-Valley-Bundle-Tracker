@@ -1,0 +1,571 @@
+{
+  "data": [
+    {
+      "category_id": 1,
+      "category": "craft's room",
+      "reward": "bridge repair",
+      "items": [
+        {
+          "title": "spring foraging bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "wild horseradish",
+              "checked": false,
+              "disabled": false,
+              "item_id": 110
+            },
+            {
+              "label": "daffodil",
+              "checked": false,
+              "disabled": false,
+              "item_id": 111
+            },
+            {
+              "label": "leek",
+              "checked": false,
+              "disabled": false,
+              "item_id": 112
+            },
+            {
+              "label": "dandelion",
+              "checked": false,
+              "disabled": false,
+              "item_id": 113
+            }
+          ],
+          "reward": "spring seeds (30)",
+          "bundle_id": 1
+        },
+        {
+          "title": "Summer Foraging Bundle",
+          "amount_needed": 3,
+          "amount_available": 3,
+          "bundle_items": [
+            {
+              "label": "Grape",
+              "checked": false,
+              "disabled": false,
+              "item_id": 114
+            },
+            {
+              "label": "Spice Berry",
+              "checked": false,
+              "disabled": false,
+              "item_id": 115
+            },
+            {
+              "label": "Sweet Pea",
+              "checked": false,
+              "disabled": false,
+              "item_id": 116
+            }
+          ],
+          "reward": "Summer Seeds (30)",
+          "bundle_id": 2
+        },
+        {
+          "title": "Fall Foraging Bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "Common Mushroom",
+              "checked": false,
+              "disabled": false,
+              "item_id": 117
+            },
+            {
+              "label": "Wild Plum",
+              "checked": false,
+              "disabled": false,
+              "item_id": 118
+            },
+            {
+              "label": "Hazelnut",
+              "checked": false,
+              "disabled": false,
+              "item_id": 119
+            },
+            {
+              "label": "Blackberry",
+              "checked": false,
+              "disabled": false,
+              "item_id": 120
+            }
+          ],
+          "reward": "Fall Seeds (30)",
+          "bundle_id": 3
+        },
+        {
+          "title": "Winter Foraging Bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "Winter Root",
+              "checked": false,
+              "disabled": false,
+              "item_id": 121
+            },
+            {
+              "label": "crystal fruit",
+              "checked": false,
+              "disabled": false,
+              "item_id": 122
+            },
+            {
+              "label": "Snow Yam",
+              "checked": false,
+              "disabled": false,
+              "item_id": 123
+            },
+            {
+              "label": "Crocus",
+              "checked": false,
+              "disabled": false,
+              "item_id": 124
+            }
+          ],
+          "reward": "Winter Seeds (30)",
+          "bundle_id": 4
+        },
+        {
+          "title": "Construction Bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "wood (99)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 125
+            },
+            {
+              "label": "wood (99)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 126
+            },
+            {
+              "label": "stone (99)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 127
+            },
+            {
+              "label": "hardwood (10)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 128
+            }
+          ],
+          "reward": "charcoal kiln",
+          "bundle_id": 5
+        },
+        {
+          "title": "Exotic Foraging Bundle",
+          "amount_needed": 5,
+          "amount_available": 9,
+          "bundle_items": [
+            {
+              "label": "coconut",
+              "checked": false,
+              "disabled": false,
+              "item_id": 129
+            },
+            {
+              "label": "cactus fruit",
+              "checked": false,
+              "disabled": false,
+              "item_id": 130
+            },
+            {
+              "label": "cave carrot",
+              "checked": false,
+              "disabled": false,
+              "item_id": 131
+            },
+            {
+              "label": "red mushroom",
+              "checked": false,
+              "disabled": false,
+              "item_id": 132
+            },
+            {
+              "label": "purple mushroom",
+              "checked": false,
+              "disabled": false,
+              "item_id": 133
+            },
+            {
+              "label": "maple syrup",
+              "checked": false,
+              "disabled": false,
+              "item_id": 134
+            },
+            {
+              "label": "oak resin",
+              "checked": false,
+              "disabled": false,
+              "item_id": 135
+            },
+            {
+              "label": "pine tar",
+              "checked": false,
+              "disabled": false,
+              "item_id": 136
+            },
+            {
+              "label": "morel",
+              "checked": false,
+              "disabled": false,
+              "item_id": 137
+            }
+          ],
+          "reward": "autumn's bounty",
+          "bundle_id": 6
+        }
+      ]
+    },
+    {
+      "category_id": 2,
+      "category": "pantry",
+      "reward": "greenhouse",
+      "items": [
+        {
+          "title": "spring crops bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "parsnip",
+              "checked": false,
+              "disabled": false,
+              "item_id": 200
+            },
+            {
+              "label": "green bean",
+              "checked": false,
+              "disabled": false,
+              "item_id": 201
+            },
+            {
+              "label": "cauliflower",
+              "checked": false,
+              "disabled": false,
+              "item_id": 202
+            },
+            {
+              "label": "potato",
+              "checked": false,
+              "disabled": false,
+              "item_id": 203
+            }
+          ],
+          "reward": "Speed-Gro (20)",
+          "bundle_id": 1
+        },
+        {
+          "title": "summer crops bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "tomato",
+              "checked": false,
+              "disabled": false,
+              "item_id": 204
+            },
+            {
+              "label": "hot pepper",
+              "checked": false,
+              "disabled": false,
+              "item_id": 205
+            },
+            {
+              "label": "bluberry",
+              "checked": false,
+              "disabled": false,
+              "item_id": 206
+            },
+            {
+              "label": "melon",
+              "checked": false,
+              "disabled": false,
+              "item_id": 207
+            }
+          ],
+          "reward": "quality sprinkler (1)",
+          "bundle_id": 2
+        },
+        {
+          "title": "fall crops bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "bundle_items": [
+            {
+              "label": "corn",
+              "checked": false,
+              "disabled": false,
+              "item_id": 208
+            },
+            {
+              "label": "eggplant",
+              "checked": false,
+              "disabled": false,
+              "item_id": 209
+            },
+            {
+              "label": "pumpkin",
+              "checked": false,
+              "disabled": false,
+              "item_id": 210
+            },
+            {
+              "label": "yam",
+              "checked": false,
+              "disabled": false,
+              "item_id": 211
+            }
+          ],
+          "reward": "bee house (1)",
+          "bundle_id": 3
+        },
+        {
+          "title": "quality crops bundle",
+          "amount_needed": 3,
+          "amount_available": 3,
+          "bundle_items": [
+            {
+              "label": "5x parsnip (gold)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 212
+            },
+            {
+              "label": "5x melon (gold)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 213
+            },
+            {
+              "label": "5x pumpkin (gold)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 214
+            },
+            {
+              "label": "5x corn (gold)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 215
+            }
+          ],
+          "reward": "preserves jar (1)",
+          "bundle_id": 4
+        },
+        {
+          "title": "animal bundle",
+          "amount_needed": 5,
+          "amount_available": 6,
+          "bundle_items": [
+            {
+              "label": "large milk",
+              "checked": false,
+              "disabled": false,
+              "item_id": 216
+            },
+            {
+              "label": "large egg (brown)",
+              "checked": false,
+              "disabled": false,
+              "item_id": 217
+            },
+            {
+              "label": "large egg",
+              "checked": false,
+              "disabled": false,
+              "item_id": 218
+            },
+            {
+              "label": "large goat milk",
+              "checked": false,
+              "disabled": false,
+              "item_id": 219
+            },
+            {
+              "label": "wool",
+              "checked": false,
+              "disabled": false,
+              "item_id": 220
+            },
+            {
+              "label": "duck egg",
+              "checked": false,
+              "disabled": false,
+              "item_id": 221
+            }
+          ],
+          "reward": "cheese press",
+          "bundle_id": 5
+        },
+        {
+          "title": "artisan bundle",
+          "amount_needed": 6,
+          "amount_available": 12,
+          "bundle_items": [
+            {
+              "label": "truffle oil",
+              "checked": false,
+              "disabled": false,
+              "item_id": 222
+            },
+            {
+              "label": "cloth",
+              "checked": false,
+              "disabled": false,
+              "item_id": 223
+            },
+            {
+              "label": "goat cheese",
+              "checked": false,
+              "disabled": false,
+              "item_id": 224
+            },
+            {
+              "label": "cheese",
+              "checked": false,
+              "disabled": false,
+              "item_id": 225
+            },
+            {
+              "label": "honey",
+              "checked": false,
+              "disabled": false,
+              "item_id": 226
+            },
+            {
+              "label": "jelly",
+              "checked": false,
+              "disabled": false,
+              "item_id": 227
+            },
+            {
+              "label": "apple",
+              "checked": false,
+              "disabled": false,
+              "item_id": 228
+            },
+            {
+              "label": "apricot",
+              "checked": false,
+              "disabled": false,
+              "item_id": 229
+            },
+            {
+              "label": "orange",
+              "checked": false,
+              "disabled": false,
+              "item_id": 230
+            },
+            {
+              "label": "peach",
+              "checked": false,
+              "disabled": false,
+              "item_id": 231
+            },
+            {
+              "label": "pomegranate",
+              "checked": false,
+              "disabled": false,
+              "item_id": 232
+            },
+            {
+              "label": "cherry",
+              "checked": false,
+              "disabled": false,
+              "item_id": 233
+            }
+          ],
+          "reward": "keg (1)",
+          "bundle_id": 6
+        }
+      ]
+    },
+    {
+      "category_id": 3,
+      "category": "fish tank",
+      "reward": "glittering boulder removed",
+      "items": [
+        {
+          "title": "river fish bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "reward": "bait (30)",
+          "bundle_items": [
+            {
+              "label": "sunfish",
+              "checked": false,
+              "disabled": false,
+              "item_id": 300
+            },
+            {
+              "label": "catefish",
+              "checked": false,
+              "disabled": false,
+              "item_id": 301
+            },
+            {
+              "label": "shad",
+              "checked": false,
+              "disabled": false,
+              "item_id": 302
+            },
+            {
+              "label": "tiger trout",
+              "checked": false,
+              "disabled": false,
+              "item_id": 303
+            }
+          ],
+          "bundle_id": 1
+        },
+        {
+          "title": "lake fish bundle",
+          "amount_needed": 4,
+          "amount_available": 4,
+          "reward": "dressed spinner (1)",
+          "bundle_items": [
+            {
+              "label": "largemouth bass",
+              "checked": false,
+              "disabled": false,
+              "item_id": 304
+            },
+            {
+              "label": "carp",
+              "checked": false,
+              "disabled": false,
+              "item_id": 305
+            },
+            {
+              "label": "bullhead",
+              "checked": false,
+              "disabled": false,
+              "item_id": 306
+            },
+            {
+              "label": "sturgeon",
+              "checked": false,
+              "disabled": false,
+              "item_id": 307
+            }
+          ],
+          "bundle_id": 2
+        }
+      ]
+    }
+  ]
+}

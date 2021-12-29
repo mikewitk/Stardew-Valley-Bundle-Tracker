@@ -51,7 +51,8 @@
         "unnamedComponents": "function-expression"
       }
     ],
-    "function-paren-newline":"off"
+    "function-paren-newline": "off",
+    "arrow-body-style": "off"
   },
   "settings": {
     "import/resolver": {

@@ -6,47 +6,55 @@ import BundleCard from './BundleCard';
 
 const BUNDLE_ITEMS_INCOMPLETE = [
   {
-    label: 'sunfish',
+    label: 'wild horseradish',
     checked: false,
     disabled: false,
+    item_id: 110,
   },
   {
-    label: 'catfish',
+    label: 'daffodil',
     checked: false,
     disabled: false,
+    item_id: 111,
   },
   {
-    label: 'shad',
+    label: 'leek',
     checked: false,
     disabled: false,
+    item_id: 112,
   },
   {
-    label: 'tiger trout',
+    label: 'dandelion',
     checked: false,
     disabled: false,
+    item_id: 113,
   },
 ];
 
 const BUNDLE_ITEMS_COMPLETE = [
   {
-    label: 'sunfish',
+    label: 'wild horseradish',
     checked: true,
     disabled: false,
+    item_id: 110,
   },
   {
-    label: 'catfish',
+    label: 'daffodil',
     checked: true,
     disabled: false,
+    item_id: 111,
   },
   {
-    label: 'shad',
+    label: 'leek',
     checked: true,
     disabled: false,
+    item_id: 112,
   },
   {
-    label: 'tiger trout',
+    label: 'dandelion',
     checked: true,
     disabled: false,
+    item_id: 113,
   },
 ];
 

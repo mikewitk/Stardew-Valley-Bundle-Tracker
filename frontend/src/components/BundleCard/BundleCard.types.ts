@@ -1,9 +1,9 @@
 import { CheckboxProps } from '../Checkbox/Checkbox.types';
 
 export interface BundleCardProps {
-  title: string;
-  isComplete: boolean;
-  amountNeeded: number;
   amountCompleted: number;
+  amountNeeded: number;
   bundleItems: Array<CheckboxProps>;
+  isComplete: boolean;
+  title: string;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
+import BundleTracker from './pages/BundleTracker';
 
-const App: React.FC = () => {
-  return <h1>Hello World</h1>;
-};
+const App: React.FC = () => <BundleTracker />;
 export default App;
