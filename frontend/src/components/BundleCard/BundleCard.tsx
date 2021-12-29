@@ -1,11 +1,13 @@
 import React from 'react';
-import { BundleCardProps } from './BundleCard.types';
 import { StyledTitle, StyledLi } from './BundleCard.styles';
 import Checkbox from '../Checkbox/Checkbox';
-import { HandleCheckboxChangeProps } from '../../pages/BundleTracker';
+import {
+  HandleCheckboxChangeProps,
+  BundleSubCategory,
+} from '../../types';
 
 const BundleCard: React.FC<
-  BundleCardProps & {
+  BundleSubCategory & {
     onChange: HandleCheckboxChangeProps;
     categoryId: number;
     bundleId: number;
@@ -17,6 +19,7 @@ const BundleCard: React.FC<
   onChange,
   categoryId,
   bundleId,
+  reward,
 }) => {
   const checkedItems = bundleItems.filter(
     (bundleItem) => bundleItem.checked,
@@ -31,15 +34,16 @@ const BundleCard: React.FC<
         /
         {amountNeeded}
       </StyledTitle>
+      <p>{reward}</p>
       <ul>
         {bundleItems.map((item) => (
-          <StyledLi key={item.item_id}>
+          <StyledLi key={item.itemId}>
             <Checkbox
               label={item.label}
               checked={item.checked}
               disabled={item.disabled}
-              onChange={() => onChange(categoryId, bundleId, item.item_id)}
-              item_id={item.item_id}
+              onChange={() => onChange(categoryId, bundleId, item.itemId)}
+              itemId={item.itemId}
             />
           </StyledLi>
         ))}

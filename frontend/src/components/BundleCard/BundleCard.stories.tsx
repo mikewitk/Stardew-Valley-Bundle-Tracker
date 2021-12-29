@@ -9,25 +9,25 @@ const BUNDLE_ITEMS_INCOMPLETE = [
     label: 'wild horseradish',
     checked: false,
     disabled: false,
-    item_id: 110,
+    itemId: 110,
   },
   {
     label: 'daffodil',
     checked: false,
     disabled: false,
-    item_id: 111,
+    itemId: 111,
   },
   {
     label: 'leek',
     checked: false,
     disabled: false,
-    item_id: 112,
+    itemId: 112,
   },
   {
     label: 'dandelion',
     checked: false,
     disabled: false,
-    item_id: 113,
+    itemId: 113,
   },
 ];
 
@@ -36,25 +36,25 @@ const BUNDLE_ITEMS_COMPLETE = [
     label: 'wild horseradish',
     checked: true,
     disabled: false,
-    item_id: 110,
+    itemId: 110,
   },
   {
     label: 'daffodil',
     checked: true,
     disabled: false,
-    item_id: 111,
+    itemId: 111,
   },
   {
     label: 'leek',
     checked: true,
     disabled: false,
-    item_id: 112,
+    itemId: 112,
   },
   {
     label: 'dandelion',
     checked: true,
     disabled: false,
-    item_id: 113,
+    itemId: 113,
   },
 ];
 

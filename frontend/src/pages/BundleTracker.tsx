@@ -2,37 +2,11 @@
 import React, { useEffect } from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import { useLocalStorage } from '../hooks/useLocalStorage';
-
-export interface BundleItem {
-  label: string;
-  checked: boolean;
-  disabled: boolean;
-  item_id: number;
-}
-
-export interface BundleSubCategory {
-  amount_available: number;
-  amount_needed: number;
-  bundle_id: number;
-  bundle_items: Array<BundleItem>;
-  isComplete: boolean;
-  title: string;
-}
-
-export interface BundleCategory {
-  category: string;
-  reward: string;
-  items: Array<BundleSubCategory>;
-  category_id: number;
-}
-
-interface DataProps {
-  data: Array<BundleCategory>;
-}
-
-export type HandleCheckboxChangeProps = {
-  (categoryId: number, bundleId: number, itemId: number): void;
-};
+import {
+  BundleCategory,
+  DataProps,
+  HandleCheckboxChangeProps
+} from '../types';
 
 const BundleTracker: React.FC = () => {
   const [storage, setStorage] = useLocalStorage<Array<BundleCategory>>(
@@ -62,17 +36,17 @@ const BundleTracker: React.FC = () => {
     itemId,
   ) => {
     const update = storage.map((item) => {
-      if (item.category_id === categoryId) {
+      if (item.categoryId === categoryId) {
         const newItem = item.items.map((subItem) => {
-          if (subItem.bundle_id === bundleId) {
-            const newSubItem = subItem.bundle_items.map((bundleItem) => {
-              if (bundleItem.item_id === itemId) {
+          if (subItem.bundleId === bundleId) {
+            const newSubItem = subItem.bundleItems.map((bundleItem) => {
+              if (bundleItem.itemId === itemId) {
                 const newItem = { ...bundleItem, checked: !bundleItem.checked };
                 return newItem;
               }
               return bundleItem;
             });
-            return { ...subItem, bundle_items: newSubItem };
+            return { ...subItem, bundleItems: newSubItem };
           }
           return subItem;
         });
@@ -93,8 +67,8 @@ const BundleTracker: React.FC = () => {
           category={item.category}
           items={item.items}
           reward={item.reward}
-          category_id={item.category_id}
-          key={item.category_id}
+          categoryId={item.categoryId}
+          key={item.categoryId}
           onChange={handleCheckboxChange}
         />
       ))}

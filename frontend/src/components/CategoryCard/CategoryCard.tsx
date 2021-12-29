@@ -2,32 +2,40 @@ import React from 'react';
 import {
   BundleCategory,
   HandleCheckboxChangeProps,
-} from '../../pages/BundleTracker';
+} from '../../types';
 import BundleCard from '../BundleCard/BundleCard';
+import {
+  StyledTitle,
+  StyledText,
+  StyledReward,
+  Box,
+  Card,
+} from './CategoryCard.styles';
 
 const CategoryCard: React.FC<
-  BundleCategory & { onChange: HandleCheckboxChangeProps; category_id: number }
+  BundleCategory & { onChange: HandleCheckboxChangeProps; categoryId: number }
 > = ({
-  category, items, reward, onChange, category_id: categoryId,
+  category, items, reward, onChange, categoryId,
 }) => (
-  <div>
-    <h2>{category}</h2>
-    <p>
-      Reward: &nbsp;
-      {reward}
-    </p>
+  <Card>
+    <StyledTitle>{category}</StyledTitle>
+    <Box>
+      <StyledText>Reward:</StyledText>
+      <StyledReward>{reward}</StyledReward>
+    </Box>
     {items.map((item) => (
       <BundleCard
         title={item.title}
-        amountNeeded={item.amount_needed}
-        bundleItems={item.bundle_items}
-        key={item.title + item.amount_available}
+        amountNeeded={item.amountNeeded}
+        bundleItems={item.bundleItems}
+        key={item.bundleId}
         onChange={onChange}
         categoryId={categoryId}
-        bundleId={item.bundle_id}
+        bundleId={item.bundleId}
+        reward={item.reward}
       />
     ))}
-  </div>
+  </Card>
 );
 
 export default CategoryCard;
