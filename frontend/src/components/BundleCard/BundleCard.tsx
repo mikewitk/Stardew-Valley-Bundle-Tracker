@@ -34,7 +34,10 @@ const BundleCard: React.FC<
         /
         {amountNeeded}
       </StyledTitle>
-      <p>{reward}</p>
+      <p>
+        Reward:&nbsp;
+        {reward}
+      </p>
       <ul>
         {bundleItems.map((item) => (
           <StyledLi key={item.itemId}>

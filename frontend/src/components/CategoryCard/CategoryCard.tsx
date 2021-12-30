@@ -17,25 +17,27 @@ const CategoryCard: React.FC<
 > = ({
   category, items, reward, onChange, categoryId,
 }) => (
-  <Card>
+  <div>
     <StyledTitle>{category}</StyledTitle>
     <Box>
       <StyledText>Reward:</StyledText>
       <StyledReward>{reward}</StyledReward>
     </Box>
-    {items.map((item) => (
-      <BundleCard
-        title={item.title}
-        amountNeeded={item.amountNeeded}
-        bundleItems={item.bundleItems}
-        key={item.bundleId}
-        onChange={onChange}
-        categoryId={categoryId}
-        bundleId={item.bundleId}
-        reward={item.reward}
-      />
-    ))}
-  </Card>
+    <Card>
+      {items.map((item) => (
+        <BundleCard
+          title={item.title}
+          amountNeeded={item.amountNeeded}
+          bundleItems={item.bundleItems}
+          key={item.bundleId}
+          onChange={onChange}
+          categoryId={categoryId}
+          bundleId={item.bundleId}
+          reward={item.reward}
+        />
+      ))}
+    </Card>
+  </div>
 );
 
 export default CategoryCard;
