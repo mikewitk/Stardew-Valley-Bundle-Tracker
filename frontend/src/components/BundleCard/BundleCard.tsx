@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledTitle, StyledLi } from './BundleCard.styles';
+import { StyledTitle, StyledLi, StyledCard } from './BundleCard.styles';
 import Checkbox from '../Checkbox/Checkbox';
 import {
   HandleCheckboxChangeProps,
@@ -26,7 +26,7 @@ const BundleCard: React.FC<
   ).length;
 
   return (
-    <div>
+    <StyledCard>
       <StyledTitle isComplete={checkedItems >= amountNeeded}>
         {title}
         &nbsp;
@@ -48,7 +48,7 @@ const BundleCard: React.FC<
           </StyledLi>
         ))}
       </ul>
-    </div>
+    </StyledCard>
   );
 };
 
